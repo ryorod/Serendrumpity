@@ -81,4 +81,10 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 
+# misc
+.DS_Store
+
+# WSL2
+*.Identifier
+
 
