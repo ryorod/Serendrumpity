@@ -8,6 +8,6 @@ dotenv.config({
 })
 
 const privateKey = `${process.env.WALLET_PRIVATE_KEY}`
-const network = `${process.env.NETWORK_NAME}`
+const network = `${process.env.TESTNET_NAME}`
 
 // const sdk = ThirdwebSDK.fromPrivateKey(privateKey, network)
