@@ -1,7 +1,7 @@
 import * as Max from 'max-api'
 import * as dotenv from 'dotenv'
 import * as path from 'path'
-import { NFTDrop, ThirdwebSDK } from "@thirdweb-dev/sdk"
+import { NFTDrop, NFTMetadataOrUri, ThirdwebSDK } from "@thirdweb-dev/sdk"
 import { ENV, MAINNET_CONTRACT_ADDRESS, MAINNET_NAME, TESTNET_CONTRACT_ADDRESS, TESTNET_NAME } from './config'
 
 dotenv.config({
@@ -21,3 +21,34 @@ const Init = async () => {
 }
 
 Init()
+
+type MintHandlerParams = [
+    fileAbsolutePath: string,
+]
+
+// Mint
+Max.addHandler('mint', async (...params: MintHandlerParams) => {
+    if (!contract) {
+        Max.post('Initialization incomplete', 'error')
+        return
+    }
+
+    const fileRelativePath = path.relative(__dirname, params[0])
+
+    const metadata: NFTMetadataOrUri = {
+        name: 'Serendrumpity',
+        description: 'test of Serendrumpity',
+        image: './assets/logo.jpg',
+        external_url: 'https://v1.ryorod.com/',
+        animation_url: fileRelativePath,
+        attributes: undefined,
+    }
+
+    // lazy mint
+    await contract.createBatch([metadata])
+
+    // claim
+    const result = await contract.claim(1)
+
+    Max.outlet('Minted!', JSON.stringify(result))
+})
