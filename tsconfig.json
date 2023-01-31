@@ -2,8 +2,10 @@
   "compilerOptions": {
     "baseUrl": ".",
     "target": "es5",                     
-    "module": "commonjs",                
-    "outDir": "./lib",
+    "module": "commonjs",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "outDir": "./dest",
     "lib": ["es2019"],                   
     "noImplicitAny": false,
     "paths": {
