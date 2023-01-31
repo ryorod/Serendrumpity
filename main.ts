@@ -34,7 +34,12 @@ Max.addHandler('mint', async (...params: MintHandlerParams) => {
     // upload
     const filePath = params[0].replace('Macintosh HD:', '')
     const file = fs.readFileSync(filePath)
-    const uri = await sdk.storage.upload(file)
+    const tokenId = (await contract.totalSupply()).toNumber()
+    const uri = await sdk.storage.upload(file, {
+        rewriteFileNames: {
+            fileStartNumber: tokenId,
+        }
+    })
 
     const metadata: NFTMetadataOrUri = {
         name: 'Serendrumpity',
