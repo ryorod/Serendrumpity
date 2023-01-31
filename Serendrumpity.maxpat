@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 142.0, 100.0, 964.0, 826.0 ],
+		"rect" : [ 195.0, 100.0, 855.0, 826.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -82,7 +82,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 560.0, 477.0, 157.0, 2616.0 ],
+					"patching_rect" : [ 560.0, 477.0, 157.0, 2542.0 ],
 					"text" : "Minted! [{\\\"id\\\":{\\\"type\\\":\\\"BigNumber\\\"\\,\\\"hex\\\":\\\"0x01\\\"}\\,\\\"receipt\\\":{\\\"to\\\":\\\"0x0A9445A1E0B1d1cd31c4CA9080538f13c9f821E9\\\"\\,\\\"from\\\":\\\"0x307a43E0a7bA993635BD930F13796CaFAbe3aE00\\\"\\,\\\"contractAddress\\\":null\\,\\\"transactionIndex\\\":1\\,\\\"gasUsed\\\":{\\\"type\\\":\\\"BigNumber\\\"\\,\\\"hex\\\":\\\"0x01ba12\\\"}\\,\\\"logsBloom\\\":\\\"0x02000000000000800000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000020010000000040000000000000000000000000008000000000000000000040000000000000000000000000000020000000000000000000800000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000008000001000000000000000060000000000000000000000020000000000000100000000000000000000000000000\\\"\\,\\\"blockHash\\\":\\\"0x4f52515e896fe3751fd03f99bd5c03f70329de3194d5205f32495a4805b69246\\\"\\,\\\"transactionHash\\\":\\\"0xca5c14e5a7103a96aa98d9791a95d4a99d82e00c70231ced858059611263bf8b\\\"\\,\\\"logs\\\":[{\\\"transactionIndex\\\":1\\,\\\"blockNumber\\\":17971987\\,\\\"transactionHash\\\":\\\"0xca5c14e5a7103a96aa98d9791a95d4a99d82e00c70231ced858059611263bf8b\\\"\\,\\\"address\\\":\\\"0x0A9445A1E0B1d1cd31c4CA9080538f13c9f821E9\\\"\\,\\\"topics\\\":[\\\"0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef\\\"\\,\\\"0x0000000000000000000000000000000000000000000000000000000000000000\\\"\\,\\\"0x000000000000000000000000307a43e0a7ba993635bd930f13796cafabe3ae00\\\"\\,\\\"0x0000000000000000000000000000000000000000000000000000000000000001\\\"]\\,\\\"data\\\":\\\"0x\\\"\\,\\\"logIndex\\\":0\\,\\\"blockHash\\\":\\\"0x4f52515e896fe3751fd03f99bd5c03f70329de3194d5205f32495a4805b69246\\\"}\\,{\\\"transactionIndex\\\":1\\,\\\"blockNumber\\\":17971987\\,\\\"transactionHash\\\":\\\"0xca5c14e5a7103a96aa98d9791a95d4a99d82e00c70231ced858059611263bf8b\\\"\\,\\\"address\\\":\\\"0x0A9445A1E0B1d1cd31c4CA9080538f13c9f821E9\\\"\\,\\\"topics\\\":[\\\"0xfa76a4010d9533e3e964f2930a65fb6042a12fa6ff5b08281837a10b0be7321e\\\"\\,\\\"0x0000000000000000000000000000000000000000000000000000000000000000\\\"\\,\\\"0x000000000000000000000000307a43e0a7ba993635bd930f13796cafabe3ae00\\\"\\,\\\"0x000000000000000000000000307a43e0a7ba993635bd930f13796cafabe3ae00\\\"]\\,\\\"data\\\":\\\"0x00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001\\\"\\,\\\"logIndex\\\":1\\,\\\"blockHash\\\":\\\"0x4f52515e896fe3751fd03f99bd5c03f70329de3194d5205f32495a4805b69246\\\"}]\\,\\\"blockNumber\\\":17971987\\,\\\"confirmations\\\":1\\,\\\"cumulativeGasUsed\\\":{\\\"type\\\":\\\"BigNumber\\\"\\,\\\"hex\\\":\\\"0x027dcd\\\"}\\,\\\"effectiveGasPrice\\\":{\\\"type\\\":\\\"BigNumber\\\"\\,\\\"hex\\\":\\\"0x066720b300\\\"}\\,\\\"status\\\":1\\,\\\"type\\\":2\\,\\\"byzantium\\\":true\\,\\\"events\\\":[{\\\"transactionIndex\\\":1\\,\\\"blockNumber\\\":17971987\\,\\\"transactionHash\\\":\\\"0xca5c14e5a7103a96aa98d9791a95d4a99d82e00c70231ced858059611263bf8b\\\"\\,\\\"address\\\":\\\"0x0A9445A1E0B1d1cd31c4CA9080538f13c9f821E9\\\"\\,\\\"topics\\\":[\\\"0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef\\\"\\,\\\"0x0000000000000000000000000000000000000000000000000000000000000000\\\"\\,\\\"0x000000000000000000000000307a43e0a7ba993635bd930f13796cafabe3ae00\\\"\\,\\\"0x0000000000000000000000000000000000000000000000000000000000000001\\\"]\\,\\\"data\\\":\\\"0x\\\"\\,\\\"logIndex\\\":0\\,\\\"blockHash\\\":\\\"0x4f52515e896fe3751fd03f99bd5c03f70329de3194d5205f32495a4805b69246\\\"\\,\\\"args\\\":[\\\"0x0000000000000000000000000000000000000000\\\"\\,\\\"0x307a43E0a7bA993635BD930F13796CaFAbe3aE00\\\"\\,{\\\"type\\\":\\\"BigNumber\\\"\\,\\\"hex\\\":\\\"0x01\\\"}]\\,\\\"event\\\":\\\"Transfer\\\"\\,\\\"eventSignature\\\":\\\"Transfer(address\\,address\\,uint256)\\\"}\\,{\\\"transactionIndex\\\":1\\,\\\"blockNumber\\\":17971987\\,\\\"transactionHash\\\":\\\"0xca5c14e5a7103a96aa98d9791a95d4a99d82e00c70231ced858059611263bf8b\\\"\\,\\\"address\\\":\\\"0x0A9445A1E0B1d1cd31c4CA9080538f13c9f821E9\\\"\\,\\\"topics\\\":[\\\"0xfa76a4010d9533e3e964f2930a65fb6042a12fa6ff5b08281837a10b0be7321e\\\"\\,\\\"0x0000000000000000000000000000000000000000000000000000000000000000\\\"\\,\\\"0x000000000000000000000000307a43e0a7ba993635bd930f13796cafabe3ae00\\\"\\,\\\"0x000000000000000000000000307a43e0a7ba993635bd930f13796cafabe3ae00\\\"]\\,\\\"data\\\":\\\"0x00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001\\\"\\,\\\"logIndex\\\":1\\,\\\"blockHash\\\":\\\"0x4f52515e896fe3751fd03f99bd5c03f70329de3194d5205f32495a4805b69246\\\"\\,\\\"args\\\":[{\\\"type\\\":\\\"BigNumber\\\"\\,\\\"hex\\\":\\\"0x00\\\"}\\,\\\"0x307a43E0a7bA993635BD930F13796CaFAbe3aE00\\\"\\,\\\"0x307a43E0a7bA993635BD930F13796CaFAbe3aE00\\\"\\,{\\\"type\\\":\\\"BigNumber\\\"\\,\\\"hex\\\":\\\"0x01\\\"}\\,{\\\"type\\\":\\\"BigNumber\\\"\\,\\\"hex\\\":\\\"0x01\\\"}]\\,\\\"event\\\":\\\"TokensClaimed\\\"\\,\\\"eventSignature\\\":\\\"TokensClaimed(uint256\\,address\\,address\\,uint256\\,uint256)\\\"}]}}]"
 				}
 
@@ -139,7 +139,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 901.0, 459.0, 400.0, 220.0 ],
+					"patching_rect" : [ 875.0, 459.0, 400.0, 220.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -151,15 +151,17 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 560.0, 402.567627000000016, 360.0, 22.0 ],
+					"patching_rect" : [ 560.0, 402.567627000000016, 334.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"options" : [ "-r", "ts-node/register" ],
 						"watch" : 0
 					}
 ,
-					"text" : "node.script ./src/main.ts @options -r ts-node/register @autostart 1"
+					"text" : "node.script main.ts @options -r ts-node/register @autostart 1"
 				}
 
 			}
@@ -192,7 +194,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 517.0, 81.0, 136.0, 34.0 ],
+					"patching_rect" : [ 517.0, 81.0, 136.0, 33.0 ],
 					"text" : "raise num to increase 8n possibility"
 				}
 
@@ -204,7 +206,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 20.0, 24.0, 57.0, 34.0 ],
+					"patching_rect" : [ 20.0, 24.0, 57.0, 33.0 ],
 					"text" : "constant\nmode"
 				}
 
@@ -216,7 +218,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 421.0, 39.0, 53.0, 34.0 ],
+					"patching_rect" : [ 421.0, 39.0, 53.0, 33.0 ],
 					"text" : "random mode"
 				}
 
@@ -803,24 +805,6 @@
 									}
 
 								}
-, 								{
-									"filetype" : "C74Snapshot",
-									"version" : 2,
-									"minorversion" : 0,
-									"name" : "Battery 4",
-									"origin" : "Battery 4.dll",
-									"type" : "VST",
-									"subtype" : "Instrument",
-									"embed" : 0,
-									"fileref" : 									{
-										"name" : "Battery 4",
-										"filename" : "Battery 4.maxsnap",
-										"filepath" : "~/Documents/Max 8/Snapshots",
-										"filepos" : -1,
-										"snapshotfileid" : "35a865dc51486b3cf8230ffccf3639a1"
-									}
-
-								}
  ]
 						}
 
@@ -1295,20 +1279,15 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "Battery 4.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Battery 4_20221113.maxsnap",
-				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "fit_jweb_to_bounds.js",
 				"bootpath" : "C74:/packages/Node for Max/patchers/debug-monitor",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "main.ts",
+				"bootpath" : "~/Documents/Serendrumpity",
+				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}

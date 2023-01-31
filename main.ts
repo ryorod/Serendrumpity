@@ -2,11 +2,9 @@ import * as Max from 'max-api'
 import * as dotenv from 'dotenv'
 import * as path from 'path'
 import { NFTDrop, NFTMetadataOrUri, ThirdwebSDK } from "@thirdweb-dev/sdk"
-import { ENV, MAINNET_CONTRACT_ADDRESS, MAINNET_NAME, TESTNET_CONTRACT_ADDRESS, TESTNET_NAME } from './config'
+import { ENV, MAINNET_CONTRACT_ADDRESS, MAINNET_NAME, TESTNET_CONTRACT_ADDRESS, TESTNET_NAME } from './src/config'
 
-dotenv.config({
-    path: path.join(__dirname, "../.env")
-})
+dotenv.config()
 
 const privateKey = `${process.env.WALLET_PRIVATE_KEY}`
 const network = ENV === 'production' ? MAINNET_NAME : TESTNET_NAME
@@ -33,16 +31,18 @@ Max.addHandler('mint', async (...params: MintHandlerParams) => {
         return
     }
 
-    const fileRelativePath = path.relative(__dirname, params[0])
+    const fileRelativePath = path.relative(__filename, params[0])
 
     const metadata: NFTMetadataOrUri = {
         name: 'Serendrumpity',
         description: 'test of Serendrumpity',
-        image: './assets/logo.jpg',
+        image: './src/assets/logo.jpg',
         external_url: 'https://v1.ryorod.com/',
         animation_url: fileRelativePath,
         attributes: undefined,
     }
+
+    Max.post(JSON.stringify(metadata))
 
     // lazy mint
     await contract.createBatch([metadata])

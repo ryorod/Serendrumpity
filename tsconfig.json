@@ -7,7 +7,6 @@
     "lib": ["es2019"],                   
     "noImplicitAny": false,
     "paths": {
-      "~/*": ["src/*"],
       "max-api": ["src/@types/max-api.d.ts"]
     }
   }
