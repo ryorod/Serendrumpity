@@ -1,8 +1,8 @@
 import * as Max from 'max-api'
 import * as dotenv from 'dotenv'
-import * as path from 'path'
+import * as fs from 'fs'
 import { NFTDrop, NFTMetadataOrUri, ThirdwebSDK } from "@thirdweb-dev/sdk"
-import { ENV, MAINNET_CONTRACT_ADDRESS, MAINNET_NAME, TESTNET_CONTRACT_ADDRESS, TESTNET_NAME } from './src/config'
+import { ENV, LOGO_URL, MAINNET_CONTRACT_ADDRESS, MAINNET_NAME, TESTNET_CONTRACT_ADDRESS, TESTNET_NAME } from './src/config'
 
 dotenv.config()
 
@@ -31,14 +31,17 @@ Max.addHandler('mint', async (...params: MintHandlerParams) => {
         return
     }
 
-    const fileRelativePath = path.relative(__filename, params[0])
+    // upload
+    const filePath = params[0].replace('Macintosh HD:', '')
+    const file = fs.readFileSync(filePath)
+    const uri = await sdk.storage.upload(file)
 
     const metadata: NFTMetadataOrUri = {
         name: 'Serendrumpity',
         description: 'test of Serendrumpity',
-        image: './src/assets/logo.jpg',
+        image: LOGO_URL,
         external_url: 'https://v1.ryorod.com/',
-        animation_url: fileRelativePath,
+        animation_url: uri,
         attributes: undefined,
     }
 
@@ -50,5 +53,5 @@ Max.addHandler('mint', async (...params: MintHandlerParams) => {
     // claim
     const result = await contract.claim(1)
 
-    Max.outlet('Minted!', JSON.stringify(result))
+    Max.post('Minted!', JSON.stringify(result))
 })
